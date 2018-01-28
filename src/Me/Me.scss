@@ -1,0 +1,51 @@
+@import '../vars';
+
+#about-me-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $me-background;
+	color: $white;
+
+	h1 {
+		font-family: 'Bitter', serif;
+		margin-top: 2vw;
+		font-size: 4vw;
+		text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+	}
+
+	h2 {
+		font-family: 'Bitter', serif;
+		margin-top: 1vw;
+		font-size: 2vw;
+	}
+
+	.about-me-terminal {
+		position: relative;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		font-size: 2vw;
+		font-family: 'Source Code Pro', monospace;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-top: 1.7vw solid rgb(209, 208, 208);
+		background-color: rgb(47, 47, 47);
+
+		.about-me-terminal-button {
+			position: absolute;
+			top: -1.7vw;
+			left: 5px;
+			color: rgb(236, 124, 117);
+			font-size: 1.2vw;
+		}
+
+		div {
+			margin-top: 1vw;
+			margin-bottom: 1vw;
+		}
+
+		a {
+			color: $white;
+		}
+	}
+}

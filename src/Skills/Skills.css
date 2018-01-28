@@ -1,0 +1,27 @@
+#skills-container {
+  border-top: 2vw double #59877b;
+  color: #f4f4f4;
+  background-color: #404040; }
+  #skills-container h1 {
+    display: block;
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    width: 100%;
+    text-align: center; }
+  #skills-container h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2vw; }
+  #skills-container .skills-list {
+    font-size: 2vw;
+    width: 100%; }
+  #skills-container li {
+    font-size: 2.3vw;
+    font-family: 'Bitter', serif; }
+  #skills-container .skills-list-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+
+/*# sourceMappingURL=Skills.css.map */
