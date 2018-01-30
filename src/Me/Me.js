@@ -2,11 +2,11 @@ import React from 'react';
 import './Me.css';
 
 const terminal_list = [
-	['email', 'cjaustin42@gmail.com'],
+	['email', 'cjaustin42@gmail.com', 'mailto:cjaustin42@gmail.com'],
 	['phone', '615-806-4822'],
-	['github', 'https://github.com/ConnorAustin'],
-	['major', 'Computer Science'],
-	['fav. ice cream', 'Mint Chocolate Chip']];
+	['github', 'https://github.com/ConnorAustin', 'https://github.com/ConnorAustin'],
+	['major', 'B.S. in Computer Science', false],
+	['fav. ice cream', 'Mint Chocolate Chip', false]];
 
 export default class Me extends React.Component {
 	render() {
@@ -17,8 +17,13 @@ export default class Me extends React.Component {
 		});
 
 		let terminal_values = terminal_list.map((el) => {
+			if(el[2]) {
+				return (
+					<div><b><a href={el[2]}>{el[1]}</a></b></div>
+				);
+			}
 			return (
-				<div><b>{el[1]}</b></div>
+				<div><b><a>{el[1]}</a></b></div>
 			);
 		});
 
@@ -39,7 +44,7 @@ export default class Me extends React.Component {
 			<div className="center-container">
 				<div className="about-me-terminal">
 					<span className="about-me-terminal-button"><i className="fa fa-heart" aria-hidden="true"></i></span>
-					<div>$ cat connor.austin</div>
+					<div style={{color: 'rgb(166, 166, 166)'}}>$ more connor.austin</div>
 					<div style={{display: 'flex', justifyContent: 'center'}}>
 						<div style={{color: 'rgb(166, 166, 166)'}}>
 							{ terminal_attributes }

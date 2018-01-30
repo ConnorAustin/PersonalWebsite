@@ -1,0 +1,64 @@
+@import '../vars';
+
+#projects-container {
+	border-top: 2vw double $me-background;
+	color: $white;
+	background-color: rgb(64, 64, 64);
+
+	h1 {
+		display: block;
+		font-family: 'Archivo Black', sans-serif;
+		margin-top: 2vw;
+		margin-bottom: 2vw;
+		font-size: 5vw;
+		width: 100%;
+		text-align: center;
+	}
+
+	.projects {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.project {
+		width: 15vw;
+		margin-left: 1vw;
+		margin-right: 1vw;
+		height: 22vw;
+
+		a {
+			text-decoration: none !important;
+		}
+
+		img {
+			object-fit: cover;
+			width: 15vw;
+			height: 15vw;
+			border-radius: 0.2vw;
+		}
+
+		.picture-missing {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: $white;
+			font-size: 6vw;
+			color: $black;
+			width: 15vw;
+			height: 15vw;
+			border-radius: 0.2vw;
+			font-family: 'Source Code Pro', monospace;
+		}
+
+		h1 {
+			color: $white;
+			width: 100%;
+			font-family: 'Archivo Black', sans-serif;
+			font-size: 1.4vw;
+			border-bottom: 0.2vw solid $white;
+			margin-top: 0;
+			margin-bottom: 0.3vw;
+		}
+	}
+}
