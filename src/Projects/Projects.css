@@ -25,7 +25,11 @@
       object-fit: cover;
       width: 15vw;
       height: 15vw;
-      border-radius: 0.2vw; }
+      border-radius: 0.2vw;
+      transition: transform 0.3s;
+      transform: scale(1); }
+    #projects-container .project img:hover {
+      transform: scale(1.5); }
     #projects-container .project .picture-missing {
       display: flex;
       align-items: center;
@@ -42,7 +46,6 @@
       width: 100%;
       font-family: 'Archivo Black', sans-serif;
       font-size: 1.4vw;
-      border-bottom: 0.2vw solid #f4f4f4;
       margin-top: 0;
       margin-bottom: 0.3vw; }
 

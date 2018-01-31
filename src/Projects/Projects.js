@@ -110,7 +110,9 @@ export default class Projects extends React.Component {
 
 			if(p.image) {
 				picture = (
-					<img src={p.image} />
+					<div style={{width: '15vw', height: '15vw', borderRadius: '0.2vw', overflow: 'hidden'}}>
+						<img src={p.image} />
+					</div>
 				);
 			} else {
 				picture = (
