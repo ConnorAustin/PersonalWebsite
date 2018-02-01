@@ -12,18 +12,18 @@ export default class Me extends React.Component {
 	render() {
 		let terminal_attributes = terminal_list.map((el) => {
 			return (
-				<div>{el[0]}</div>
+				<div key={el[0]}>{el[0]}</div>
 			);
 		});
 
 		let terminal_values = terminal_list.map((el) => {
 			if(el[2]) {
 				return (
-					<div><b><a href={el[2]}>{el[1]}</a></b></div>
+					<div key={el[1]}><b><a href={el[2]}>{el[1]}</a></b></div>
 				);
 			}
 			return (
-				<div><b><a>{el[1]}</a></b></div>
+				<div key={el[1]}><b><a>{el[1]}</a></b></div>
 			);
 		});
 

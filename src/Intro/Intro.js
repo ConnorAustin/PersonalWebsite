@@ -61,6 +61,7 @@ export default class Intro extends React.Component {
 					</span>
 					<span id="identity-container">
 						{identities_list}
+						<span className="underline"></span>
 					</span>
 				</div>
 			</div>

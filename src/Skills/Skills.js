@@ -1,44 +1,66 @@
 import React from 'react';
 import './Skills.css';
 
+const skills = [
+	{
+		name: 'Languages',
+		skills: [
+			'Python',
+			'Java',
+			'C / C++',
+			'C#',
+			'Javascript',
+			'PHP',
+			'HTML',
+			'CSS / SASS'
+		]
+	},
+	{
+		name: 'Frameworks',
+		skills: [
+			'React',
+			'Node JS',
+			'Django',
+			'Joomla',
+			'Android',
+			'iOS',
+			'Unity'
+		]
+	},
+	{
+		name: 'Tools',
+		skills: [
+			'Azure',
+			'AWS',
+			'Git / GitHub',
+			'Docker',
+			'SQL'
+		]
+	},
+
+];
 export default class Skills extends React.Component {
 	render() {
+		let skill_elements = skills.map((s) => {
+			let list = s.skills.map((skill) => {
+				return (<li key={skill}>{skill}</li>);
+			});
+
+			return (
+			<span key={s.name}>
+				<h2>{s.name}</h2>
+				<ul className="skills-list">
+					{list}
+				</ul>
+			</span>
+			);
+		});
+
 		return (
 		<div id="skills-container">
 			<h1>Skills</h1>
 			<div className="skills-list-container">
-				<span>
-					<h2>Languages</h2>
-					<ul className="skills-list">
-						<li>Python</li>
-						<li>Java</li>
-						<li>C / C++</li>
-						<li>C#</li>
-						<li>Javascript</li>
-						<li>PHP</li>
-						<li>HTML</li>
-						<li>CSS / SASS</li>
-					</ul>
-				</span>
-
-				<span>
-					<h2>Talents</h2>
-					<ul className="skills-list">
-						<li>Linux</li>
-						<li>Django</li>
-						<li>Node JS</li>
-						<li>Joomla</li>
-						<li>Azure</li>
-						<li>AWS</li>
-						<li>Azure</li>
-						<li>Android</li>
-						<li>Git / GitHub</li>
-						<li>SQL</li>
-						<li>Docker</li>
-						<li>React</li>
-						<li>Unity</li>
-					</ul>
-				</span>
+				{skill_elements}
 			</div>
 		</div>
 		);
