@@ -5,11 +5,11 @@ const skills = [
 	{
 		name: 'Languages',
 		skills: [
-			'Python',
 			'Java',
-			'C / C++',
 			'C#',
 			'Javascript',
+			'Python',
+			'C / C++',
 			'PHP',
 			'HTML',
 			'CSS / SASS'
@@ -22,8 +22,10 @@ const skills = [
 			'Node JS',
 			'Django',
 			'Joomla',
-			'Android',
-			'iOS',
+			'Android / Studio',
+			'iOS / Xcode',
+			'Processing',
+			'Game Maker',
 			'Unity'
 		]
 	},
@@ -31,10 +33,12 @@ const skills = [
 		name: 'Tools',
 		skills: [
 			'Azure',
+			'Azure ML',
 			'AWS',
 			'Git / GitHub',
 			'Docker',
-			'SQL'
+			'SQL',
+			'Linux'
 		]
 	},
 
