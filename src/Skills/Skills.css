@@ -4,8 +4,8 @@
   #skills-container h1 {
     display: block;
     font-family: 'Archivo Black', sans-serif;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     font-size: 5vw;
     width: 100%;
     text-align: center; }

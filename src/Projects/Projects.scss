@@ -4,6 +4,43 @@
 	border-top: 2vw double $me-background;
 	color: $white;
 	background-color: rgb(36, 36, 36);
+	overflow: hidden;
+	height: 40vw;
+
+	.slick-dots {
+		display: flex !important;
+		justify-content: center !important;
+		position: inherit;
+		margin-top: 2vw;
+
+		li {
+			display: inline-block;
+			width: auto;
+			height: auto;
+			margin-left: 2vw;
+			margin-right: 2vw;
+		}
+
+		li.slick-active {
+			button {
+				&:before {
+					color: $me-background;
+				}
+			}
+		}
+
+		button {
+			width: 1vw;
+			text-align: center;
+
+			&:before {
+				opacity: 1.0;
+				font-size: 2vw;
+				color: $white;
+				transition: color 0.5s;
+			}
+		}
+	}
 
 	h1 {
 		display: block;
@@ -15,17 +52,9 @@
 		text-align: center;
 	}
 
-	.projects {
-		display: flex;
-		width: 100%;
-		justify-content: space-around;
-	}
-
 	.project {
-		width: 15vw;
-		margin-left: 1vw;
-		margin-right: 1vw;
-		height: 22vw;
+		display: flex;
+		justify-content: center;
 
 		a {
 			text-decoration: none !important;
@@ -36,12 +65,6 @@
 			width: 15vw;
 			height: 15vw;
 			border-radius: 0.2vw;
-			transition: transform 0.3s;
-			transform: scale(1);
-		}
-
-		img:hover {
-			transform: scale(1.5);
 		}
 
 		.picture-missing {

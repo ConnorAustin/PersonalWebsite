@@ -42,7 +42,6 @@ export default class Intro extends React.Component {
 				}
 
 				let identity = identities[(cur_identity + i) % identities.length];
-				console.log(identity);
 				identities_list.unshift((
 					<span key={identity} className={classes}>
 						<span>{identity}</span>

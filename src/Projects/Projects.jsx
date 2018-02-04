@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
+import Slider from 'react-slick';
 
-const projects_per_row = 4;
 const projects = [
 	{
 		name: 'MIPS Simulator',
@@ -110,9 +110,9 @@ export default class Projects extends React.Component {
 
 			if(p.image) {
 				picture = (
-					<div style={{width: '15vw', height: '15vw', borderRadius: '0.2vw', overflow: 'hidden'}}>
+					<span style={{width: '15vw', height: '15vw', borderRadius: '0.2vw', overflow: 'hidden'}}>
 						<img src={p.image} />
-					</div>
+					</span>
 				);
 			} else {
 				picture = (
@@ -130,21 +130,13 @@ export default class Projects extends React.Component {
 			);
 		});
 
-		let project_rows = [];
-		for(var i = 0; i < project_elements.length; i += projects_per_row) {
-			let row = project_elements.slice(i, i + projects_per_row);
-
-			project_rows.push((
-				<div key={i} className="projects">
-					{row}
-				</div>
-			));
-		}
-
 		return (
 		<div id="projects-container">
 			<h1>Projects</h1>
-			{ project_rows }
+			<Slider lazyLoad={true} dots={true} infinite={true} speed={500} slidesToShow={4} slidesToScroll={4}>
+				{project_elements}
+			</Slider>
+			<div>Hey! Check out my GitHub for more projects.</div>
 		</div>
 		);
 	}
