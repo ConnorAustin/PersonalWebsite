@@ -12,7 +12,8 @@ const skills = [
 			'C / C++',
 			'PHP',
 			'HTML',
-			'CSS / SASS'
+			'CSS / SASS',
+			'SQL'
 		]
 	},
 	{
@@ -35,9 +36,9 @@ const skills = [
 			'Azure',
 			'Azure ML',
 			'AWS',
-			'Git / GitHub',
+			'Git',
 			'Docker',
-			'SQL',
+			'PostgreSQL',
 			'Linux'
 		]
 	},
