@@ -4,6 +4,11 @@ import Slider from 'react-slick';
 
 const projects = [
 	{
+		name: 'Physics Notes',
+		link: 'https://github.com/physicsnotes/physicsnotes.github.io',
+		image: 'https://github.com/physicsnotes/physicsnotes.github.io/raw/master/Examples/Website.png'
+	},
+	{
 		name: 'MIPS Simulator',
 		link: 'https://github.com/ConnorAustin/MipsSimulator',
 		image: 'https://raw.githubusercontent.com/ConnorAustin/MipsSimulator/master/example.gif'
@@ -133,10 +138,10 @@ export default class Projects extends React.Component {
 		return (
 		<div id="projects-container">
 			<h1>Projects</h1>
+			<div class="github-link"><a href="https://github.com/ConnorAustin"><img src={require('../Images/GitHub.png')}></img></a></div>
 			<Slider lazyLoad={true} dots={true} infinite={true} speed={500} slidesToShow={4} slidesToScroll={4}>
 				{project_elements}
 			</Slider>
-			<div>Hey! Check out my GitHub for more projects.</div>
 		</div>
 		);
 	}
