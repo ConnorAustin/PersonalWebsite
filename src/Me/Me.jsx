@@ -29,7 +29,7 @@ export default class Me extends React.Component {
 
 		return (
 		<div id="about-me-container">
-			<div className="center-container"><h1>Hello World!</h1></div>
+			<div className="center-container"><h1 class="header">Hello World!</h1></div>
 			<div className="center-container">
 				<h2>Hello! I am <b>Connor Austin</b> and I want to improve the world around us.</h2>
 			</div>
@@ -38,7 +38,7 @@ export default class Me extends React.Component {
 			</div>
 			<br/>
 			<div className="center-container">
-				<h2><b>I am a programmer who loves solving difficult problems.</b></h2>
+				<h2><b>I love solving difficult problems.</b></h2>
 			</div>
 
 			<div className="center-container">

@@ -2,16 +2,19 @@
 
 #skills-container {
 	color: $white;
-	background-color: rgb(64, 64, 64);
+	background-color: $me-background;
+	border-top: 2vw double $alt-background;
+	padding-bottom: 2vw;
 
 	h1 {
 		display: block;
-		font-family: 'Archivo Black', sans-serif;
-		padding-top: 2vw;
-		padding-bottom: 2vw;
-		font-size: 5vw;
 		width: 100%;
+	}
+
+	.icon {
 		text-align: center;
+		font-size: 4vw;
+		padding-bottom: 2vw;
 	}
 
 	h2 {

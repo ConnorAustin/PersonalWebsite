@@ -3,7 +3,7 @@
 #projects-container {
 	border-top: 2vw double $me-background;
 	color: $white;
-	background-color: rgb(36, 36, 36);
+	background-color: $alt-background;
 	overflow: hidden;
 	height: 45vw;
 
@@ -55,12 +55,8 @@
 
 	h1 {
 		display: block;
-		font-family: 'Archivo Black', sans-serif;
-		margin-top: 2vw;
 		margin-bottom: 2vw;
-		font-size: 5vw;
 		width: 100%;
-		text-align: center;
 	}
 
 	.project {
@@ -76,6 +72,7 @@
 			width: 15vw;
 			height: 15vw;
 			border-radius: 0.2vw;
+
 		}
 
 		.picture-missing {
@@ -91,6 +88,11 @@
 			font-family: 'Source Code Pro', monospace;
 		}
 
+		br {
+			display: block;
+			margin-top: 1vw;
+		}
+
 		h1 {
 			color: $white;
 			width: 100%;
@@ -98,6 +100,7 @@
 			font-size: 1.4vw;
 			margin-top: 0;
 			margin-bottom: 0.3vw;
+			text-align: center;
 		}
 	}
 }

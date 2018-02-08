@@ -4,10 +4,7 @@
   background-color: #4d936f;
   color: #f4f4f4; }
   #about-me-container h1 {
-    font-family: 'Bitter', serif;
-    margin-top: 2vw;
-    font-size: 4vw;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3); }
+    margin-top: 2vw; }
   #about-me-container h2 {
     font-family: 'Bitter', serif;
     margin-top: 1vw;

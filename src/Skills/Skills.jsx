@@ -26,20 +26,20 @@ const skills = [
 			'Android / Studio',
 			'iOS / Xcode',
 			'Processing',
-			'Game Maker',
-			'Unity'
+			'Unity',
+			'Game Maker'
 		]
 	},
 	{
 		name: 'Tools',
 		skills: [
+			'Linux',
 			'Azure',
-			'Azure ML',
 			'AWS',
 			'Git',
 			'Docker',
 			'PostgreSQL',
-			'Linux'
+			'Azure ML',
 		]
 	},
 
@@ -63,7 +63,8 @@ export default class Skills extends React.Component {
 
 		return (
 		<div id="skills-container">
-			<h1>Skills</h1>
+			<h1 class="header">Skills</h1>
+			<div class="icon"><i class="fas fa-code"></i></div>
 			<div className="skills-list-container">
 				{skill_elements}
 			</div>

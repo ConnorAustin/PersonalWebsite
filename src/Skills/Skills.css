@@ -1,14 +1,15 @@
 #skills-container {
   color: #f4f4f4;
-  background-color: #404040; }
+  background-color: #4d936f;
+  border-top: 2vw double #30271f;
+  padding-bottom: 2vw; }
   #skills-container h1 {
     display: block;
-    font-family: 'Archivo Black', sans-serif;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    font-size: 5vw;
-    width: 100%;
-    text-align: center; }
+    width: 100%; }
+  #skills-container .icon {
+    text-align: center;
+    font-size: 4vw;
+    padding-bottom: 2vw; }
   #skills-container h2 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 2vw; }

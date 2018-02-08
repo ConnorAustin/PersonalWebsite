@@ -137,7 +137,7 @@ export default class Projects extends React.Component {
 
 		return (
 		<div id="projects-container">
-			<h1>Projects</h1>
+			<h1 class="header">Projects</h1>
 			<div class="github-link"><a href="https://github.com/ConnorAustin"><img src={require('../Images/GitHub.png')}></img></a></div>
 			<Slider lazyLoad={true} dots={true} infinite={true} speed={500} slidesToShow={4} slidesToScroll={4}>
 				{project_elements}
