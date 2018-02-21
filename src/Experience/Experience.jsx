@@ -8,7 +8,7 @@ const experience = [
 		date: 'Jan 2018 - Current',
 		description:
 			['Built the iOS portion and assited debugging Android side for a react-native app alongside third-party software development team.',
-			'The app can poll for calls and answer them with video chat or text and show the map location of users including other features under NDA.']
+			'The app can poll for calls and answer them with video chat or text and show the map location of users among other features.']
 	},
 	{
 		job: 'Revenue Platforms',

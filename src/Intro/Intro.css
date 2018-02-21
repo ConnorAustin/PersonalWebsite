@@ -3,28 +3,36 @@
   position: relative;
   height: 100vh;
   overflow: hidden; }
+  @media screen and (min-width: 1800px), screen and (orientation: portrait) {
+    #intro-container {
+      height: 80vh; } }
 
 #intro {
+  position: relative;
+  bottom: 10vw;
   display: flex;
   height: 100%;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #111111; }
   #intro #name-container {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
     overflow: hidden; }
     #intro #name-container .underline {
       border-top: 0.5vw solid #111111;
       width: 100%;
       animation: underline-expand 0.4s ease; }
   #intro #name {
-    font-size: 9vw;
+    font-size: 13vw;
     position: relative;
     opacity: 0;
     top: 20vw;
-    animation: name–reveal 0.8s ease-out 0.2s;
+    animation: name–reveal 0.6s ease-out 0.2s;
     animation-fill-mode: forwards;
     font-family: 'Noto Serif', serif; }
   #intro #identity-container {
@@ -34,12 +42,13 @@
     position: relative;
     overflow: hidden;
     width: 30vw;
-    height: 5vw; }
+    height: 5vw;
+    bottom: 1px; }
     #intro #identity-container .identity {
       position: absolute;
-      top: 100%;
+      bottom: 10vw;
       left: 0;
-      color: #f4f4f4;
+      color: #e9e8e8;
       width: 100%;
       height: 100%;
       font-size: 3vw;
@@ -50,11 +59,11 @@
       animation: 0.6s identity–reveal forwards; }
     #intro #identity-container .identity-visible {
       opacity: 1;
-      top: 0vh; }
+      bottom: 0vw; }
 @keyframes identity–reveal {
   to {
     opacity: 1;
-    top: 0vh; } }
+    bottom: 0vw; } }
 @keyframes name–reveal {
   to {
     opacity: 1;
@@ -71,13 +80,13 @@
   flex-direction: column;
   font-size: 4vw;
   font-family: 'Archivo Black', sans-serif;
-  animation: more-info-reveal 0.8s ease-out 1.1s forwards;
+  animation: more-info-reveal 0.8s ease-out 0.9s forwards;
   border-bottom: 5vw solid #4d936f; }
   #more-info .more-info-icon {
     position: relative;
     top: 4vw;
     font-size: 6vw;
-    color: #f4f4f4;
+    color: #e9e8e8;
     text-align: center;
     width: 6vw;
     height: 6vw;

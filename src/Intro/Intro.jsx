@@ -1,7 +1,8 @@
 import React from 'react';
 import './Intro.css';
 
-const identities = ['Programmer', 'Game Designer', 'Artist', 'Dreamer'];
+// const identities = ['Programmer', 'Game Designer', 'Artist', 'Dreamer'];
+const identities = ['Programmer'];
 export default class Intro extends React.Component {
 	reveal_identity() {
 		this.setState((prev_state, props) => ({
@@ -22,7 +23,7 @@ export default class Intro extends React.Component {
 
 			// Keep showing new identities
 			setInterval(() => this.reveal_identity(), 2000);
-		}, 900);
+		}, 700);
 	}
 
 	render() {
@@ -53,15 +54,13 @@ export default class Intro extends React.Component {
 		return (
 		<div id="intro-container">
 			<div id="intro">
-				<div style={{display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'flex-end'}}>
-					<span id="name-container">
-						<span id="name">Connor Austin</span>
-						<span className="underline"></span>
-					</span>
-					<span id="identity-container">
-						{identities_list}
-						<span className="underline"></span>
-					</span>
+				<span id="name-container">
+					<span id="name">Connor Austin</span>
+					<span className="underline"></span>
+				</span>
+				<div id="identity-container">
+					{identities_list}
+					<span className="underline"></span>
 				</div>
 			</div>
 			<div className="center-container" id="more-info"><span className="more-info-text">Who I am</span><i className="more-info-icon fa fa-caret-down" aria-hidden="true"></i></div>

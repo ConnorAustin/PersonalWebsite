@@ -1,7 +1,7 @@
 #experience-container {
-  background-color: #30271f;
+  background-color: #242424;
   border-top: 2vw double #4d936f;
-  color: #f4f4f4;
+  color: #e9e8e8;
   font-family: 'Bitter', serif; }
   #experience-container .icon {
     text-align: center;
@@ -16,7 +16,7 @@
       border-radius: 2vw;
       box-shadow: inset 0px -0.3vw 0px 0px rgba(0, 0, 0, 0.39);
       padding: 3vw;
-      color: #f4f4f4; }
+      color: #e9e8e8; }
     #experience-container .experience h2 {
       font-family: 'Archivo Black', sans-serif;
       font-size: 3vw;

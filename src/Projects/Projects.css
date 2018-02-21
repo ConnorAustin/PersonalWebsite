@@ -1,7 +1,7 @@
 #projects-container {
   border-top: 2vw double #4d936f;
-  color: #f4f4f4;
-  background-color: #30271f;
+  color: #e9e8e8;
+  background-color: #242424;
   overflow: hidden;
   height: 45vw; }
   #projects-container .github-link {
@@ -30,7 +30,7 @@
       #projects-container .slick-dots button:before {
         opacity: 1.0;
         font-size: 2vw;
-        color: #f4f4f4;
+        color: #e9e8e8;
         transition: color 0.5s; }
   #projects-container h1 {
     display: block;
@@ -50,7 +50,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #f4f4f4;
+      background: #e9e8e8;
       font-size: 6vw;
       color: #111111;
       width: 15vw;
@@ -61,7 +61,7 @@
       display: block;
       margin-top: 1vw; }
     #projects-container .project h1 {
-      color: #f4f4f4;
+      color: #e9e8e8;
       width: 100%;
       font-family: 'Archivo Black', sans-serif;
       font-size: 1.4vw;
