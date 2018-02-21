@@ -4,9 +4,13 @@
   background-color: #242424;
   overflow: hidden;
   height: 45vw; }
+  @media screen and (min-width: 1800px), screen and (orientation: portrait) {
+    #projects-container {
+      padding-bottom: 10vw;
+      height: 70vw; } }
   #projects-container .github-link {
     width: 100%;
-    font-family: 'Bitter', serif;
+    font-family: "Raleway", serif;
     text-align: center; }
     #projects-container .github-link img {
       width: 6vw;
@@ -56,15 +60,15 @@
       width: 15vw;
       height: 15vw;
       border-radius: 0.2vw;
-      font-family: 'Source Code Pro', monospace; }
+      font-family: "Source Code Pro", monospace; }
     #projects-container .project br {
       display: block;
       margin-top: 1vw; }
     #projects-container .project h1 {
       color: #e9e8e8;
       width: 100%;
-      font-family: 'Archivo Black', sans-serif;
-      font-size: 1.4vw;
+      font-family: "Asap", sans-serif;
+      font-size: 1.9vw;
       margin-top: 0;
       margin-bottom: 0.3vw;
       text-align: center; }

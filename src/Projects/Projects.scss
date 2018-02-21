@@ -7,9 +7,14 @@
 	overflow: hidden;
 	height: 45vw;
 
+	@media #{$phone} {
+		padding-bottom: 10vw;
+		height: 70vw;
+	}
+
 	.github-link {
 		width: 100%;
-		font-family: 'Bitter', serif;
+		font-family: $normal-font;
 		text-align: center;
 
 		img {
@@ -85,7 +90,7 @@
 			width: 15vw;
 			height: 15vw;
 			border-radius: 0.2vw;
-			font-family: 'Source Code Pro', monospace;
+			font-family: $code-font;
 		}
 
 		br {
@@ -96,8 +101,8 @@
 		h1 {
 			color: $white;
 			width: 100%;
-			font-family: 'Archivo Black', sans-serif;
-			font-size: 1.4vw;
+			font-family: $header-font;
+			font-size: 1.9vw;
 			margin-top: 0;
 			margin-bottom: 0.3vw;
 			text-align: center;

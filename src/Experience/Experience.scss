@@ -4,7 +4,7 @@
 	background-color: $alt-background;
 	border-top: 2vw double $me-background;
 	color: $white;
-	font-family: 'Bitter', serif;
+	font-family: $normal-font;
 
 	.icon {
 		text-align: center;
@@ -26,7 +26,7 @@
 		}
 
 		h2 {
-			font-family: 'Archivo Black', sans-serif;
+			font-family: $header-font;
 			font-size: 3vw;
 			margin-bottom: 0;
 			margin-top: 0;
@@ -37,7 +37,7 @@
 			justify-content: flex-start;
 			align-items: baseline;
 			font-size: 2vw;
-			font-family: 'Archivo Black', sans-serif;
+			font-family: $header-font;
 			div {
 				margin-right: 1vw;
 			}

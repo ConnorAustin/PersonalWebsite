@@ -3,7 +3,7 @@
 #intro-container {
 	position: relative;
 	height: 100vh;
-	@media #{$phone} { height: 80vh; }
+	@media #{$phone} { height: 90vh; }
 	overflow: hidden;
 }
 
@@ -41,7 +41,7 @@
 		top: 20vw;
 		animation: name–reveal 0.6s ease-out 0.2s;
 		animation-fill-mode: forwards;
-		font-family: 'Noto Serif', serif;
+		font-family: $name-font;
 	}
 
 	#identity-container {
@@ -62,7 +62,7 @@
 			width: 100%;
 			height: 100%;
 			font-size: 3vw;
-			font-family: 'Archivo Black', sans-serif;
+			font-family: $header-font;
 			align-items: flex-end;
 			background-color: $black !important;
 		}
@@ -114,7 +114,7 @@
 	width: 100%;
 	flex-direction: column;
 	font-size: 4vw;
-	font-family: 'Archivo Black', sans-serif;
+	font-family: $header-font;
 	animation: more-info-reveal 0.8s ease-out 0.9s forwards;
 	border-bottom: 5vw solid $me-background;
 

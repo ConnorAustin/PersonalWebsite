@@ -29,9 +29,9 @@ export default class Me extends React.Component {
 
 		return (
 		<div id="about-me-container">
-			<div className="center-container"><h1 class="header">Hello!</h1></div>
+			<div className="center-container"><h1 class="header">About Me</h1></div>
 			<div className="center-container">
-				<h2>Hello! I am <b>Connor Austin</b> and I want to improve the world around us.</h2>
+				<h2>Hello! I am <em>Connor Austin</em>, a full stack developer focused on creating efficent, elegant solutions.</h2>
 			</div>
 			<div className="center-container">
 				<h2>I believe everyone can use their imaginations to do fantastic things.</h2>

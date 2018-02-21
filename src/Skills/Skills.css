@@ -3,6 +3,9 @@
   background-color: #4d936f;
   border-top: 2vw double #242424;
   padding-bottom: 2vw; }
+  @media screen and (min-width: 1800px), screen and (orientation: portrait) {
+    #skills-container {
+      padding-bottom: 10vw; } }
   #skills-container h1 {
     display: block;
     width: 100%; }
@@ -11,7 +14,7 @@
     font-size: 4vw;
     padding-bottom: 2vw; }
   #skills-container h2 {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Asap", sans-serif;
     font-size: 2vw; }
   #skills-container .skills-list {
     font-size: 2vw;
@@ -21,7 +24,7 @@
     padding: 0; }
   #skills-container li {
     font-size: 2.3vw;
-    font-family: 'Bitter', serif; }
+    font-family: "Raleway", serif; }
   #skills-container .skills-list-container {
     display: flex;
     justify-content: space-around;

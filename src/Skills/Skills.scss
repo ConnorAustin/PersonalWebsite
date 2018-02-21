@@ -6,6 +6,10 @@
 	border-top: 2vw double $alt-background;
 	padding-bottom: 2vw;
 
+	@media #{$phone} {
+		padding-bottom: 10vw;
+	}
+
 	h1 {
 		display: block;
 		width: 100%;
@@ -18,7 +22,7 @@
 	}
 
 	h2 {
-		font-family: 'Archivo Black', sans-serif;
+		font-family: $header-font;
 		font-size: 2vw;
 	}
 
@@ -32,7 +36,7 @@
 
 	li {
 		font-size: 2.3vw;
-		font-family: 'Bitter', serif;
+		font-family: $normal-font;
 	}
 
 	.skills-list-container {

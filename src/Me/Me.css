@@ -4,19 +4,27 @@
   background-color: #4d936f;
   color: #e9e8e8; }
   #about-me-container h2 {
-    font-family: 'Bitter', serif;
+    font-family: "Raleway", serif;
     margin-top: 1vw;
-    font-size: 2vw; }
+    width: 70%;
+    text-align: center;
+    font-size: 3vw; }
     @media screen and (min-width: 1800px), screen and (orientation: portrait) {
       #about-me-container h2 {
         font-size: 5vw; } }
+    #about-me-container h2 em {
+      font-family: "Noto Serif", serif;
+      text-decoration: none;
+      font-size: 3vw;
+      font-style: normal;
+      font-weight: bold; }
   #about-me-container .about-me-terminal {
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     font-size: 2vw;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
     padding-left: 20px;
     padding-right: 20px;
     border-top: 1.7vw solid #d1d0d0;

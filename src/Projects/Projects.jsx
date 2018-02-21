@@ -4,14 +4,14 @@ import Slider from 'react-slick';
 
 const projects = [
 	{
-		name: 'Physics Notes',
-		link: 'https://github.com/physicsnotes/physicsnotes.github.io',
-		image: 'https://github.com/physicsnotes/physicsnotes.github.io/raw/master/Examples/Website.png'
-	},
-	{
 		name: 'MIPS Simulator',
 		link: 'https://github.com/ConnorAustin/MipsSimulator',
 		image: 'https://raw.githubusercontent.com/ConnorAustin/MipsSimulator/master/example.gif'
+	},
+	{
+		name: 'Physics Notes',
+		link: 'https://github.com/physicsnotes/physicsnotes.github.io',
+		image: 'https://github.com/physicsnotes/physicsnotes.github.io/raw/master/Examples/Website.png'
 	},
 	{
 		name: 'Rust Ray Tracer',
@@ -19,9 +19,28 @@ const projects = [
 		image: 'https://raw.githubusercontent.com/ConnorAustin/RustRaytracer/master/example.gif'
 	},
 	{
+		name: 'SNES Controller',
+		link: 'https://github.com/ConnorAustin/SNESController',
+		image: 'https://raw.githubusercontent.com/ConnorAustin/SNESController/master/SnesPic.jpg'
+	},
+	{
+		name: 'Compiler',
+		link: 'https://github.com/ConnorAustin/Compiler'
+	},
+	{
 		name: 'Better Board',
 		link: 'https://github.com/ConnorAustin/BetterBoard',
 		image: 'https://raw.githubusercontent.com/ConnorAustin/BetterBoard/master/Examples/kewl.png'
+	},
+	{
+		name: 'BST Visualization',
+		link: 'https://github.com/ConnorAustin/TreeVisual',
+		image: 'https://raw.githubusercontent.com/ConnorAustin/TreeVisual/master/example.gif'
+	},
+	{
+		name: 'Booyer Moore',
+		link: 'https://github.com/ConnorAustin/BoyerMoore',
+		image: 'https://raw.githubusercontent.com/ConnorAustin/BoyerMoore/master/example.gif'
 	},
 	{
 		name: 'Roll Me Up',
@@ -41,15 +60,7 @@ const projects = [
 	{
 		name: 'Bob Toss',
 		link: 'https://github.com/ConnorAustin/BobToss',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/BobToss/master/bob.gif'},
-	{
-		name: 'SNES Controller',
-		link: 'https://github.com/ConnorAustin/SNESController',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/SNESController/master/SnesPic.jpg'
-	},
-	{
-		name: 'Compiler',
-		link: 'https://github.com/ConnorAustin/Compiler'
+		image: 'https://raw.githubusercontent.com/ConnorAustin/BobToss/master/bob.gif'
 	},
 	{
 		name: 'Apple Picker',
@@ -80,16 +91,6 @@ const projects = [
 		name: 'Web Dev 1',
 		link: 'https://github.com/ConnorAustin/WebDev1',
 		image: 'https://raw.githubusercontent.com/ConnorAustin/WebDev1/master/Picture.png'
-	},
-	{
-		name: 'BST Visualization',
-		link: 'https://github.com/ConnorAustin/TreeVisual',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/TreeVisual/master/example.gif'
-	},
-	{
-		name: 'Booyer Moore',
-		link: 'https://github.com/ConnorAustin/BoyerMoore',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/BoyerMoore/master/example.gif'
 	},
 	{
 		name: 'Jelly Blast!',

@@ -1,5 +1,6 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
-@import 'https://fonts.googleapis.com/css?family=Archivo+Black|Noto+Serif|Bitter|Source+Code+Pro';
+@import 'https://fonts.googleapis.com/css?family=Archivo+Black|Noto+Serif|Bitter|Source+Code+Pro|Asap:700|Raleway:300';
+
 @import 'vars';
 
 body, html {
@@ -18,7 +19,7 @@ body, html {
 }
 
 .header {
-	font-family: 'Archivo Black', sans-serif;
+	font-family: $header-font;
 	font-size: 4vw;
 	@media #{$phone} { font-size: 10vw; }
 

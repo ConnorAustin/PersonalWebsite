@@ -2,7 +2,7 @@
   background-color: #242424;
   border-top: 2vw double #4d936f;
   color: #e9e8e8;
-  font-family: 'Bitter', serif; }
+  font-family: "Raleway", serif; }
   #experience-container .icon {
     text-align: center;
     font-size: 4vw; }
@@ -18,7 +18,7 @@
       padding: 3vw;
       color: #e9e8e8; }
     #experience-container .experience h2 {
-      font-family: 'Archivo Black', sans-serif;
+      font-family: "Asap", sans-serif;
       font-size: 3vw;
       margin-bottom: 0;
       margin-top: 0; }
@@ -27,7 +27,7 @@
       justify-content: flex-start;
       align-items: baseline;
       font-size: 2vw;
-      font-family: 'Archivo Black', sans-serif; }
+      font-family: "Asap", sans-serif; }
       #experience-container .experience .position div {
         margin-right: 1vw; }
       #experience-container .experience .position small {
