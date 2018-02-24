@@ -23,8 +23,8 @@ const skills = [
 			'Node JS',
 			'Django',
 			'Joomla',
-			'Android / Studio',
-			'iOS / Xcode',
+			'Android',
+			'iOS',
 			'Processing',
 			'Unity',
 			'Game Maker'
@@ -40,6 +40,10 @@ const skills = [
 			'Docker',
 			'PostgreSQL',
 			'Azure ML',
+			'Android Studio',
+			'Visual Studio',
+			'XCode',
+			'Eclipse'
 		]
 	},
 
