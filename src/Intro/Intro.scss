@@ -15,7 +15,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	color: $white;
+	color: $black;
 
 	#name-container {
 		display: inline-flex;
@@ -28,7 +28,7 @@
 		overflow: hidden;
 
 		.underline {
-			border-top: 0.5vw solid $white;
+			border-top: 0.5vw solid $black;
 			width: 100%;
 			animation: underline-expand 0.4s ease;
 		}
@@ -58,13 +58,13 @@
 			position: absolute;
 			bottom: 10vw;
 			left: 0;
-			color: $black;
+			color: $white;
 			width: 100%;
 			height: 100%;
 			font-size: 3vw;
 			font-family: $header-font;
 			align-items: flex-end;
-			background-color: $white !important;
+			background-color: $black !important;
 		}
 
 		.identity-reveal-anim {
@@ -117,8 +117,8 @@
 	font-family: $header-font;
 	animation: more-info-reveal 0.8s ease-out 0.9s forwards;
 	border-bottom: 5vw solid $me-background;
-	color: $white;
-	
+	color: $black;
+
 	.more-info-icon {
 		position: relative;
 		top: 4vw;

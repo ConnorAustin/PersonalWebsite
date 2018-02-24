@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #e9e8e8; }
+  color: #111111; }
   #intro #name-container {
     display: inline-flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     margin-right: 1vw;
     overflow: hidden; }
     #intro #name-container .underline {
-      border-top: 0.5vw solid #e9e8e8;
+      border-top: 0.5vw solid #111111;
       width: 100%;
       animation: underline-expand 0.4s ease; }
   #intro #name {
@@ -48,13 +48,13 @@
       position: absolute;
       bottom: 10vw;
       left: 0;
-      color: #111111;
+      color: #e9e8e8;
       width: 100%;
       height: 100%;
       font-size: 3vw;
       font-family: "Asap", sans-serif;
       align-items: flex-end;
-      background-color: #e9e8e8 !important; }
+      background-color: #111111 !important; }
     #intro #identity-container .identity-reveal-anim {
       animation: 0.6s identity–reveal forwards; }
     #intro #identity-container .identity-visible {
@@ -82,7 +82,7 @@
   font-family: "Asap", sans-serif;
   animation: more-info-reveal 0.8s ease-out 0.9s forwards;
   border-bottom: 5vw solid #4d936f;
-  color: #e9e8e8; }
+  color: #111111; }
   #more-info .more-info-icon {
     position: relative;
     top: 4vw;
