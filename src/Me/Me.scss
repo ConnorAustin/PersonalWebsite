@@ -46,4 +46,11 @@
 			color: $white;
 		}
 	}
+
+	.resume-link {
+		font-family: $header-font;
+		color: $white;
+		font-size: 4vw;
+		text-decoration: underline;
+	}
 }

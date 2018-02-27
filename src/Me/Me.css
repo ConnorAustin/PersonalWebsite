@@ -34,5 +34,10 @@
       margin-bottom: 1vw; }
     #about-me-container .about-me-terminal a {
       color: #e9e8e8; }
+  #about-me-container .resume-link {
+    font-family: "Asap", sans-serif;
+    color: #e9e8e8;
+    font-size: 4vw;
+    text-decoration: underline; }
 
 /*# sourceMappingURL=Me.css.map */

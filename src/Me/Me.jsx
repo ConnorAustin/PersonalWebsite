@@ -54,6 +54,9 @@ export default class Me extends React.Component {
 					</div>
 				</div>
 			</div>
+			<div className="center-container">
+				<a className="resume-link" href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/ConnorAustin/resume/master/ConnorAustin_Resume.pdf">View my resume</a>
+			</div>
 		</div>
 		);
 	}
