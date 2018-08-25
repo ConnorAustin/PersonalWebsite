@@ -2,42 +2,96 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #4d936f;
-  color: #e9e8e8; }
+  color: #e9e8e8;
+}
+@media screen and (min-width: 12in) {
+  #about-me-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 115rem;
+  }
+}
+#about-me-container .resume-container {
+  display: flex;
+  justify-content: center;
+}
+#about-me-container .resume-container .resume {
+  width: 25vw;
+  height: 31vw;
+  border: none;
+  box-shadow: 0px 0px 63px 6px rgba(0, 0, 0, 0.21);
+}
+@media screen and (min-width: 12in) {
+  #about-me-container .resume-container .resume {
+    width: 34rem;
+    height: 42.16rem;
+  }
+}
+#about-me-container h2 {
+  font-family: "Raleway", serif;
+  margin-top: 1vw;
+  width: 70%;
+  text-align: center;
+  font-size: 3vw;
+}
+@media screen and (max-width: 6in) {
   #about-me-container h2 {
-    font-family: "Raleway", serif;
-    margin-top: 1vw;
-    width: 70%;
-    text-align: center;
-    font-size: 3vw; }
-    @media screen and (min-width: 1800px), screen and (orientation: portrait) {
-      #about-me-container h2 {
-        font-size: 5vw; } }
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 12in) {
+  #about-me-container h2 {
+    font-size: 3rem;
+  }
+}
+#about-me-container .about-me-terminal {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 2vw;
+  font-family: "Source Code Pro", monospace;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1.7vw solid #d1d0d0;
+  background-color: #2f2f2f;
+}
+@media screen and (min-width: 12in) {
   #about-me-container .about-me-terminal {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    font-size: 2vw;
-    font-family: "Source Code Pro", monospace;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-top: 1.7vw solid #d1d0d0;
-    background-color: #2f2f2f; }
-    #about-me-container .about-me-terminal .about-me-terminal-button {
-      position: absolute;
-      top: -1.7vw;
-      left: 5px;
-      color: #ec7c75;
-      font-size: 1.2vw; }
-    #about-me-container .about-me-terminal div {
-      margin-top: 1vw;
-      margin-bottom: 1vw; }
-    #about-me-container .about-me-terminal a {
-      color: #e9e8e8; }
+    border-top-width: 1.8rem;
+    font-size: 1.6rem;
+  }
+}
+#about-me-container .about-me-terminal .about-me-terminal-button {
+  position: absolute;
+  top: -1.7vw;
+  left: 5px;
+  color: #ec7c75;
+  font-size: 1.2vw;
+}
+@media screen and (min-width: 12in) {
+  #about-me-container .about-me-terminal .about-me-terminal-button {
+    font-size: 1.5rem;
+    top: -2rem;
+  }
+}
+#about-me-container .about-me-terminal div {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+#about-me-container .about-me-terminal a {
+  color: #e9e8e8;
+}
+#about-me-container .resume-link {
+  font-family: "Asap", sans-serif;
+  color: #e9e8e8;
+  font-size: 4vw;
+  text-decoration: underline;
+}
+@media screen and (min-width: 12in) {
   #about-me-container .resume-link {
-    font-family: "Asap", sans-serif;
-    color: #e9e8e8;
-    font-size: 4vw;
-    text-decoration: underline; }
+    font-size: 4rem;
+  }
+}
 
 /*# sourceMappingURL=Me.css.map */

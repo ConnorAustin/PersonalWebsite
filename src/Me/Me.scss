@@ -4,8 +4,34 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 
+	@media #{$phone} {
+	}
+	
+	@media #{$big-screen} {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		height: 115rem;
+	}
+
 	background-color: $me-background;
 	color: $white;
+	
+	.resume-container {
+		display: flex;
+		justify-content: center;
+
+		.resume {
+			width: 25vw;
+			height: 31vw;
+			border: none;
+			box-shadow: 0px 0px 63px 6px rgba(0,0,0,0.21);
+			
+			@media #{$big-screen} {
+				width: 34rem;
+				height: 42.16rem;
+			}
+		}
+	}
 
 	h2 {
 		font-family: $normal-font;
@@ -14,7 +40,13 @@
 		text-align: center;
 
 		font-size: 3vw;
-		@media #{$phone} { font-size: 5vw; }
+		@media #{$phone} { 
+			font-size: 5vw; 
+		}
+
+		@media #{$big-screen} {
+			font-size: 3rem;
+		}
 	}
 
 	.about-me-terminal {
@@ -29,12 +61,22 @@
 		border-top: 1.7vw solid rgb(209, 208, 208);
 		background-color: rgb(47, 47, 47);
 
+		@media #{$big-screen} {
+			border-top-width: 1.8rem;
+			font-size: 1.6rem;
+		}
+
 		.about-me-terminal-button {
 			position: absolute;
 			top: -1.7vw;
 			left: 5px;
 			color: rgb(236, 124, 117);
 			font-size: 1.2vw;
+
+			@media #{$big-screen} {
+				font-size: 1.5rem;
+				top: -2rem;
+			}
 		}
 
 		div {
@@ -52,5 +94,9 @@
 		color: $white;
 		font-size: 4vw;
 		text-decoration: underline;
+
+		@media #{$big-screen} {
+			font-size: 4rem;
+		}
 	}
 }

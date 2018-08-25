@@ -6,15 +6,27 @@
 	color: $white;
 	font-family: $normal-font;
 
+	@media #{$big-screen} {
+		border-top: $section-border-size double $me-background;
+	}
+
 	.icon {
 		text-align: center;
 		font-size: 4vw;
+
+		@media #{$big-screen} {
+			font-size: 4rem;
+		}
 	}
 
 	.experience {
 		display: flex;
 		justify-content: center;
 		padding-bottom: 2vw;
+
+		@media #{$big-screen} {
+			padding-bottom: 2rem;
+		}
 
 		.center-container {
 			width: 50vw;
@@ -23,6 +35,17 @@
 			box-shadow: inset 0px -0.3vw 0px 0px rgba(0, 0, 0, 0.39);
 			padding: 3vw;
 			color: $white;
+			display: block;
+		
+			@media #{$big-screen} {
+				width: 50rem;
+				padding: 3rem;
+			}
+
+			@media #{$phone} {
+				width: 90vw;
+				padding: 1.2rem;
+			}
 		}
 
 		h2 {
@@ -30,6 +53,14 @@
 			font-size: 3vw;
 			margin-bottom: 0;
 			margin-top: 0;
+
+			@media #{$big-screen} {
+				font-size: 3rem;
+			}
+
+			@media #{$phone} {
+				font-size: 1.6rem;
+			}
 		}
 
 		.position {
@@ -38,18 +69,48 @@
 			align-items: baseline;
 			font-size: 2vw;
 			font-family: $header-font;
+			
+			@media #{$big-screen} {
+				font-size: 2rem;
+			}
+
+			@media #{$phone} {
+				font-size: 1rem;
+			}
+
 			div {
 				margin-right: 1vw;
+
+				@media #{$big-screen} {
+					margin-right: 1rem;
+				}
 			}
+
 			small {
+				font-family: $normal-font;
 				font-size: 1.4vw;
-				margin-left: 1vw;
+				margin-left: 0.2vw;
+
+				@media #{$big-screen} {
+					font-size: 1.4rem;
+					margin-left: 0.3rem;
+				}
+
+				@media #{$phone} {
+					font-size: 0.8rem;
+					margin-left: 0.2rem;
+				}
 			}
 		}
 
 		.description {
 			margin-top: 1vw;
 			font-size: 2vw;
+
+			@media #{$big-screen} {
+				margin-top: 1rem;
+				font-size: 2rem;
+			}
 		}
 	}
 }

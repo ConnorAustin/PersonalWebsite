@@ -1,13 +1,18 @@
 @import '../vars';
 
 #skills-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	color: $white;
 	background-color: $me-background;
 	border-top: 2vw double $alt-background;
 	padding-bottom: 2vw;
 
-	@media #{$phone} {
-		padding-bottom: 10vw;
+	@media #{$big-screen} {
+		border-top: $section-border-size double $alt-background;
+		padding-bottom: $section-border-size;
 	}
 
 	h1 {
@@ -19,29 +24,62 @@
 		text-align: center;
 		font-size: 4vw;
 		padding-bottom: 2vw;
+
+		@media #{$big-screen} {
+			font-size: 4rem;
+			padding-bottom: 2rem;
+		}
 	}
 
 	h2 {
 		font-family: $header-font;
 		font-size: 2vw;
+
+		@media #{$big-screen} {
+			font-size: 2.3rem;
+		}
+
+		@media #{$phone} {
+			font-size: 1.6rem;
+		}
 	}
 
 	.skills-list {
-		font-size: 2vw;
 		width: 100%;
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 
-	li {
+	.skill-category {
+		@media #{$phone} {
+			margin-top: 2rem;
+		}
+	}
+
+	.skill {
 		font-size: 2.3vw;
 		font-family: $normal-font;
+
+		@media #{$big-screen} {
+			font-size: 1.8rem;
+		}
+
+		@media #{$phone} {
+			font-size: 1.4rem;
+		}
 	}
 
 	.skills-list-container {
 		display: flex;
-		justify-content: space-around;
 		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+
+		@media #{$phone} {
+			width: initial;
+			display: inline-flex;
+			flex-direction: column;
+		}
 	}
 }

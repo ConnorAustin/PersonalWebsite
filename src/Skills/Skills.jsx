@@ -13,7 +13,8 @@ const skills = [
 			'PHP',
 			'HTML',
 			'CSS / SASS',
-			'SQL'
+			'SQL',
+			'Oracle PL/SQL'
 		]
 	},
 	{
@@ -52,11 +53,11 @@ export default class Skills extends React.Component {
 	render() {
 		let skill_elements = skills.map((s) => {
 			let list = s.skills.map((skill) => {
-				return (<li key={skill}>{skill}</li>);
+				return (<li className="skill" key={skill}>{skill}</li>);
 			});
 
 			return (
-			<span key={s.name}>
+			<span className="skill-category"key={s.name}>
 				<h2>{s.name}</h2>
 				<ul className="skills-list">
 					{list}

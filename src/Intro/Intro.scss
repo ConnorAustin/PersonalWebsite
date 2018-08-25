@@ -42,6 +42,10 @@
 		animation: name–reveal 0.6s ease-out 0.2s;
 		animation-fill-mode: forwards;
 		font-family: $name-font;
+
+		@media #{$big-screen} {
+			font-size: 10rem;
+		}
 	}
 
 	#identity-container {
@@ -65,6 +69,10 @@
 			font-family: $header-font;
 			align-items: flex-end;
 			background-color: $black !important;
+
+			@media #{$big-screen} {
+				font-size: 2rem;
+			}
 		}
 
 		.identity-reveal-anim {
@@ -74,6 +82,11 @@
 		.identity-visible {
 			opacity: 1;
 			bottom: 0vw;
+		}
+
+		@media #{$big-screen} {
+			width: 20rem;
+			height: 3rem;
 		}
 	}
 
@@ -135,6 +148,11 @@
 	.more-info-text {
 		position: relative;
 		top: 4vw;
+	}
+
+	@media #{$phone} {
+		bottom: -6rem;
+		font-size: 3rem;
 	}
 }
 

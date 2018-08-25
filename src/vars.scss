@@ -5,9 +5,12 @@ $intro-side-margins: 20px;
 $me-background: rgb(77, 147, 111);
 $alt-background: rgb(36, 36, 36);
 
+$section-border-size: 1.7rem;
+
 $header-font: 'Asap', sans-serif;
 $normal-font: 'Raleway', serif;
 $code-font: 'Source Code Pro', monospace;
-$name-font: 'Noto Serif', serif;
+$name-font: 'Mukta Mahee', serif;
 
-$phone: "screen and (min-width: 1800px), screen and (orientation: portrait)";
+$phone: "screen and (max-width: 6in)";
+$big-screen: "screen and (min-width: 12in)";

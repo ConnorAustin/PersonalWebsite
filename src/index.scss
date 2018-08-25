@@ -1,5 +1,5 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
-@import 'https://fonts.googleapis.com/css?family=Archivo+Black|Noto+Serif|Bitter|Source+Code+Pro|Asap:700|Raleway:300';
+@import 'https://fonts.googleapis.com/css?family=Archivo+Black|Mukta+Mahee|Bitter|Source+Code+Pro|Asap:700|Raleway:300';
 
 @import 'vars';
 
@@ -20,13 +20,19 @@ body, html {
 
 .header {
 	font-family: $header-font;
-	font-size: 4vw;
-	@media #{$phone} { font-size: 10vw; }
-
 	text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
-
-	margin-top: 2vw;
-	@media #{$phone} { margin-top: 7vw; }
-
 	text-align: center;
+
+	font-size: 4vw;
+	margin-top: 2vw;
+
+	@media #{$phone} { 
+		font-size: 2rem; 
+		margin-top: 0.7rem; 
+	}
+
+	@media #{$big-screen} {
+		font-size: 4rem; 
+		margin-top: 1rem;
+	}
 }

@@ -2,39 +2,120 @@
   background-color: #242424;
   border-top: 2vw double #4d936f;
   color: #e9e8e8;
-  font-family: "Raleway", serif; }
+  font-family: "Raleway", serif;
+}
+@media screen and (min-width: 12in) {
+  #experience-container {
+    border-top: 1.7rem double #4d936f;
+  }
+}
+#experience-container .icon {
+  text-align: center;
+  font-size: 4vw;
+}
+@media screen and (min-width: 12in) {
   #experience-container .icon {
-    text-align: center;
-    font-size: 4vw; }
+    font-size: 4rem;
+  }
+}
+#experience-container .experience {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2vw;
+}
+@media screen and (min-width: 12in) {
   #experience-container .experience {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2vw; }
-    #experience-container .experience .center-container {
-      width: 50vw;
-      background-color: #4d936f;
-      border-radius: 2%;
-      box-shadow: inset 0px -0.3vw 0px 0px rgba(0, 0, 0, 0.39);
-      padding: 3vw;
-      color: #e9e8e8; }
-    #experience-container .experience h2 {
-      font-family: "Asap", sans-serif;
-      font-size: 3vw;
-      margin-bottom: 0;
-      margin-top: 0; }
-    #experience-container .experience .position {
-      display: flex;
-      justify-content: flex-start;
-      align-items: baseline;
-      font-size: 2vw;
-      font-family: "Asap", sans-serif; }
-      #experience-container .experience .position div {
-        margin-right: 1vw; }
-      #experience-container .experience .position small {
-        font-size: 1.4vw;
-        margin-left: 1vw; }
-    #experience-container .experience .description {
-      margin-top: 1vw;
-      font-size: 2vw; }
+    padding-bottom: 2rem;
+  }
+}
+#experience-container .experience .center-container {
+  width: 50vw;
+  background-color: #4d936f;
+  border-radius: 2%;
+  box-shadow: inset 0px -0.3vw 0px 0px rgba(0, 0, 0, 0.39);
+  padding: 3vw;
+  color: #e9e8e8;
+  display: block;
+}
+@media screen and (min-width: 12in) {
+  #experience-container .experience .center-container {
+    width: 50rem;
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 6in) {
+  #experience-container .experience .center-container {
+    width: 90vw;
+    padding: 1.2rem;
+  }
+}
+#experience-container .experience h2 {
+  font-family: "Asap", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media screen and (min-width: 12in) {
+  #experience-container .experience h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 6in) {
+  #experience-container .experience h2 {
+    font-size: 1.6rem;
+  }
+}
+#experience-container .experience .position {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  font-size: 2vw;
+  font-family: "Asap", sans-serif;
+}
+@media screen and (min-width: 12in) {
+  #experience-container .experience .position {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 6in) {
+  #experience-container .experience .position {
+    font-size: 1rem;
+  }
+}
+#experience-container .experience .position div {
+  margin-right: 1vw;
+}
+@media screen and (min-width: 12in) {
+  #experience-container .experience .position div {
+    margin-right: 1rem;
+  }
+}
+#experience-container .experience .position small {
+  font-family: "Raleway", serif;
+  font-size: 1.4vw;
+  margin-left: 0.2vw;
+}
+@media screen and (min-width: 12in) {
+  #experience-container .experience .position small {
+    font-size: 1.4rem;
+    margin-left: 0.3rem;
+  }
+}
+@media screen and (max-width: 6in) {
+  #experience-container .experience .position small {
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+  }
+}
+#experience-container .experience .description {
+  margin-top: 1vw;
+  font-size: 2vw;
+}
+@media screen and (min-width: 12in) {
+  #experience-container .experience .description {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=Experience.css.map */

@@ -2,10 +2,13 @@
 #intro-container {
   position: relative;
   height: 100vh;
-  overflow: hidden; }
-  @media screen and (min-width: 1800px), screen and (orientation: portrait) {
-    #intro-container {
-      height: 90vh; } }
+  overflow: hidden;
+}
+@media screen and (max-width: 6in) {
+  #intro-container {
+    height: 90vh;
+  }
+}
 
 #intro {
   position: relative;
@@ -15,64 +18,96 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #111111; }
-  #intro #name-container {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    overflow: hidden; }
-    #intro #name-container .underline {
-      border-top: 0.5vw solid #111111;
-      width: 100%;
-      animation: underline-expand 0.4s ease; }
+  color: #111111;
+}
+#intro #name-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  overflow: hidden;
+}
+#intro #name-container .underline {
+  border-top: 0.5vw solid #111111;
+  width: 100%;
+  animation: underline-expand 0.4s ease;
+}
+#intro #name {
+  font-size: 13vw;
+  position: relative;
+  opacity: 0;
+  top: 20vw;
+  animation: name–reveal 0.6s ease-out 0.2s;
+  animation-fill-mode: forwards;
+  font-family: "Mukta Mahee", serif;
+}
+@media screen and (min-width: 12in) {
   #intro #name {
-    font-size: 13vw;
-    position: relative;
-    opacity: 0;
-    top: 20vw;
-    animation: name–reveal 0.6s ease-out 0.2s;
-    animation-fill-mode: forwards;
-    font-family: "Noto Serif", serif; }
+    font-size: 10rem;
+  }
+}
+#intro #identity-container {
+  display: flex;
+  margin-right: 20px;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 30vw;
+  height: 5vw;
+  bottom: 1px;
+}
+#intro #identity-container .identity {
+  position: absolute;
+  bottom: 10vw;
+  left: 0;
+  color: #e9e8e8;
+  width: 100%;
+  height: 100%;
+  font-size: 3vw;
+  font-family: "Asap", sans-serif;
+  align-items: flex-end;
+  background-color: #111111 !important;
+}
+@media screen and (min-width: 12in) {
+  #intro #identity-container .identity {
+    font-size: 2rem;
+  }
+}
+#intro #identity-container .identity-reveal-anim {
+  animation: 0.6s identity–reveal forwards;
+}
+#intro #identity-container .identity-visible {
+  opacity: 1;
+  bottom: 0vw;
+}
+@media screen and (min-width: 12in) {
   #intro #identity-container {
-    display: flex;
-    margin-right: 20px;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    width: 30vw;
-    height: 5vw;
-    bottom: 1px; }
-    #intro #identity-container .identity {
-      position: absolute;
-      bottom: 10vw;
-      left: 0;
-      color: #e9e8e8;
-      width: 100%;
-      height: 100%;
-      font-size: 3vw;
-      font-family: "Asap", sans-serif;
-      align-items: flex-end;
-      background-color: #111111 !important; }
-    #intro #identity-container .identity-reveal-anim {
-      animation: 0.6s identity–reveal forwards; }
-    #intro #identity-container .identity-visible {
-      opacity: 1;
-      bottom: 0vw; }
+    width: 20rem;
+    height: 3rem;
+  }
+}
 @keyframes identity–reveal {
   to {
     opacity: 1;
-    bottom: 0vw; } }
+    bottom: 0vw;
+  }
+}
 @keyframes name–reveal {
   to {
     opacity: 1;
-    top: 0vh; } }
+    top: 0vh;
+  }
+}
 @keyframes underline-expand {
   from {
-    width: 0%; }
+    width: 0%;
+  }
   to {
-    width: 100%; } }
+    width: 100%;
+  }
+}
+
 #more-info {
   position: absolute;
   bottom: -20vw;
@@ -82,23 +117,34 @@
   font-family: "Asap", sans-serif;
   animation: more-info-reveal 0.8s ease-out 0.9s forwards;
   border-bottom: 5vw solid #4d936f;
-  color: #111111; }
-  #more-info .more-info-icon {
-    position: relative;
-    top: 4vw;
-    font-size: 6vw;
-    color: #e9e8e8;
-    text-align: center;
-    width: 6vw;
-    height: 6vw;
-    border-radius: 100vw;
-    background-color: #4d936f; }
-  #more-info .more-info-text {
-    position: relative;
-    top: 4vw; }
+  color: #111111;
+}
+#more-info .more-info-icon {
+  position: relative;
+  top: 4vw;
+  font-size: 6vw;
+  color: #e9e8e8;
+  text-align: center;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 100vw;
+  background-color: #4d936f;
+}
+#more-info .more-info-text {
+  position: relative;
+  top: 4vw;
+}
+@media screen and (max-width: 6in) {
+  #more-info {
+    bottom: -6rem;
+    font-size: 3rem;
+  }
+}
 
 @keyframes more-info-reveal {
   to {
-    bottom: 0%; } }
+    bottom: 0%;
+  }
+}
 
 /*# sourceMappingURL=Intro.css.map */

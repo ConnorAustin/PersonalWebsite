@@ -5,7 +5,8 @@ const terminal_list = [
 	['email', 'cjaustin42@gmail.com', 'mailto:cjaustin42@gmail.com'],
 	['phone', '615-806-4822'],
 	['github', 'https://github.com/ConnorAustin', 'https://github.com/ConnorAustin'],
-	['major', 'B.S. in Computer Science', false],
+	['linkedin', 'linkedin.com/in/cjaustin42', 'https://www.linkedin.com/in/cjaustin42'],
+	['degree', 'B.S. in Computer Science', false],
 	['fav. ice cream', 'Mint Chocolate Chip', false]];
 
 export default class Me extends React.Component {
@@ -31,15 +32,9 @@ export default class Me extends React.Component {
 		<div id="about-me-container">
 			<div className="center-container"><h1 class="header">About Me</h1></div>
 			<div className="center-container">
-				<h2>Hello! I am <b>Connor Austin</b>, a full stack developer focused on creating efficient, elegant solutions.</h2>
-			</div>
-			<div className="center-container">
-				<h2>I believe everyone can use their imaginations to do fantastic things.</h2>
+				<h2>Hello! I am <b>Connor Austin</b>, a developer that loves building things <i class="fas fa-rocket"></i></h2>
 			</div>
 			<br/>
-			<div className="center-container">
-				<h2><b>I love solving difficult problems.</b></h2>
-			</div>
 			<div className="center-container">
 				<div className="about-me-terminal">
 					<span className="about-me-terminal-button"><i className="fa fa-heart" aria-hidden="true"></i></span>
@@ -55,7 +50,11 @@ export default class Me extends React.Component {
 				</div>
 			</div>
 			<div className="center-container">
-				<a className="resume-link" href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/ConnorAustin/resume/master/ConnorAustin_Resume.pdf">View my resume</a>
+				<a className="resume-link" href="https://connoraustin.xyz/ConnorAustin-Resume.pdf">View my resume</a>
+			</div>
+			
+			<div class="resume-container">
+				<iframe class="resume" src="https://connoraustin.xyz/rawresume/"></iframe>
 			</div>
 		</div>
 		);
