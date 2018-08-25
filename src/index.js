@@ -5,3 +5,9 @@ import App from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // registerServiceWorker();
+
+navigator.serviceWorker.getRegistrations().then(function(registrations) {
+for(let registration of registrations) {
+    registration.unregister()
+} })
+    
