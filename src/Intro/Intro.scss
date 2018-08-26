@@ -3,7 +3,6 @@
 #intro-container {
 	position: relative;
 	height: 100vh;
-	@media #{$phone} { height: 90vh; }
 	overflow: hidden;
 }
 
@@ -123,37 +122,33 @@
 
 #more-info {
 	position: absolute;
-	bottom: -20vw;
+	top: 100vh;
 	width: 100%;
 	flex-direction: column;
-	font-size: 4vw;
+	font-size: 4rem;
 	font-family: $header-font;
 	animation: more-info-reveal 0.8s ease-out 0.9s forwards;
-	border-bottom: 5vw solid $me-background;
+	border-bottom: 5rem solid $me-background;
 	color: $black;
 
 	.more-info-icon {
 		position: relative;
-		top: 4vw;
-		font-size: 6vw;
+		top: 1.6rem;
+		font-size: 4rem;
 
 		color: $white;
 		text-align: center;
-		width: 6vw;
-		height: 6vw;
-		border-radius: 100vw;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 1000px;
 		background-color: $me-background;
 	}
 
 	.more-info-text {
 		position: relative;
-		top: 4vw;
+		top: 2.2rem;
 	}
 
-	@media #{$phone} {
-		bottom: -6rem;
-		font-size: 3rem;
-	}
 }
 
 @keyframes more-info-reveal {
@@ -161,6 +156,6 @@
 	}
 
 	to {
-		bottom: 0%;
+		top: calc(100vh - 13rem);
 	}
 }
