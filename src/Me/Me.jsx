@@ -53,9 +53,11 @@ export default class Me extends React.Component {
 				<a className="resume-link" href="https://connoraustin.xyz/ConnorAustin-Resume.pdf">View my resume</a>
 			</div>
 			
+			{/*
 			<div class="resume-container">
 				<iframe class="resume" src="https://connoraustin.xyz/rawresume/"></iframe>
 			</div>
+			*/}
 		</div>
 		);
 	}

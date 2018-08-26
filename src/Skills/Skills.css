@@ -37,9 +37,9 @@
     font-size: 2.3rem;
   }
 }
-@media screen and (max-width: 6in) {
+@media screen and (max-width: 8in) {
   #skills-container h2 {
-    font-size: 1.6rem;
+    font-size: 7vw;
   }
 }
 #skills-container .skills-list {
@@ -48,7 +48,7 @@
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 6in) {
+@media screen and (max-width: 8in) {
   #skills-container .skill-category {
     margin-top: 2rem;
   }
@@ -62,9 +62,9 @@
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 6in) {
+@media screen and (max-width: 8in) {
   #skills-container .skill {
-    font-size: 1.4rem;
+    font-size: 6vw;
   }
 }
 #skills-container .skills-list-container {
@@ -73,7 +73,7 @@
   flex-direction: row;
   justify-content: space-around;
 }
-@media screen and (max-width: 6in) {
+@media screen and (max-width: 8in) {
   #skills-container .skills-list-container {
     width: initial;
     display: inline-flex;
