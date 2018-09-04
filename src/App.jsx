@@ -5,7 +5,8 @@ import Intro from './Intro/Intro.jsx';
 import Me from './Me/Me.jsx';
 import Skills from './Skills/Skills.jsx';
 import Projects from './Projects/Projects.jsx';
-import Experience from './Experience/Experience.jsx'; // If only it was that simple
+import Experience from './Experience/Experience.jsx';
+import Backup from './Backup/Backup.jsx';
 
 export default class App extends React.Component {
   render() {
@@ -14,9 +15,9 @@ export default class App extends React.Component {
           <Intro />
           <Me />
           <Experience />
-          <Skills />
           <Projects />
-          
+          <Skills />
+          <Backup />
         </div>
     );
   }

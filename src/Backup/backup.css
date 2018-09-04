@@ -1,0 +1,18 @@
+#backup-container {
+  background-color: #4d936f;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+#backup-container a {
+  color: #e9e8e8 !important;
+  font-family: "Raleway", serif;
+  font-size: 1.2em;
+}
+#backup-container .fa-hand-point-up {
+  color: #e9e8e8;
+  font-size: 1.3em !important;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/*# sourceMappingURL=backup.css.map */

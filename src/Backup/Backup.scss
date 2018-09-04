@@ -1,0 +1,21 @@
+@import '../vars';
+
+#backup-container {
+    background-color: $me-background;
+
+    padding-bottom: 1em;
+    padding-top: 1em;
+    
+    a {
+        color: $white !important;
+        font-family: $normal-font;
+        font-size: 1.2em;
+    }
+
+    .fa-hand-point-up  {
+        color: $white;
+        font-size: 1.3em !important;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
