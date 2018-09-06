@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   color: #e9e8e8;
-  background-color: #4d936f;
-  border-top: 2vw double #242424;
+  background-color: #242424;
+  border-top: 2vw double #4d936f;
   padding-bottom: 2vw;
 }
 @media screen and (min-width: 12in) {
   #skills-container {
-    border-top: 1.7rem double #242424;
+    border-top: 1.7rem double #4d936f;
     padding-bottom: 1.7rem;
   }
 }

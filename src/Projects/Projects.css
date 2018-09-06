@@ -1,9 +1,8 @@
 #projects-container {
-  border-top: 2vw double #4d936f;
+  border-top: 2vw double #242424;
   color: #e9e8e8;
-  background-color: #242424;
-  overflow: hidden;
-  height: 60vw;
+  background-color: #4d936f;
+  padding-bottom: 1em;
 }
 @media screen and (max-width: 8in) {
   #projects-container {
@@ -12,14 +11,14 @@
 }
 @media screen and (min-width: 12in) {
   #projects-container {
-    border-top: 1.7rem double #4d936f;
-    height: 45rem;
+    border-top: 1.7rem double #242424;
   }
 }
 #projects-container .github-link {
   width: 100%;
   font-family: "Raleway", serif;
   text-align: center;
+  margin-bottom: 2em;
 }
 #projects-container .github-link img {
   width: 6vw;
@@ -79,7 +78,7 @@
   }
 }
 #projects-container h1 {
-  display: block;
+  display: inline-block;
   margin-bottom: 2vw;
   width: 100%;
 }
@@ -88,25 +87,16 @@
     margin-bottom: 2rem;
   }
 }
-#projects-container .project {
+#projects-container .row {
   display: flex;
-  justify-content: center;
 }
 #projects-container .project a {
   text-decoration: none !important;
 }
 #projects-container .project img {
   object-fit: cover;
-  width: 15vw;
-  height: 15vw;
-  border-radius: 0.2vw;
-}
-@media screen and (min-width: 12in) {
-  #projects-container .project img {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 0.2rem;
-  }
+  width: 33vw;
+  height: 22vw;
 }
 #projects-container .project .picture-missing {
   display: flex;
@@ -115,17 +105,13 @@
   background: #e9e8e8;
   font-size: 6vw;
   color: #111111;
-  width: 15vw;
-  height: 15vw;
-  border-radius: 0.2vw;
   font-family: "Source Code Pro", monospace;
+  width: 33vw;
+  height: 22vw;
 }
 @media screen and (min-width: 12in) {
   #projects-container .project .picture-missing {
     font-size: 6rem;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 0.2rem;
   }
 }
 #projects-container .project br {

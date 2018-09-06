@@ -1,25 +1,28 @@
 @import '../vars';
 
+$project-width: 33vw;
+$project-height: 22vw;
+$border-radius: 0.2vw;
+
 #projects-container {
-	border-top: 2vw double $me-background;
+	border-top: 2vw double $alt-background;
 	color: $white;
-	background-color: $alt-background;
-	overflow: hidden;
-	height: 60vw;
+	background-color: $me-background;
+	padding-bottom: 1em;
 
 	@media #{$phone} {
 		padding-bottom: 12rem;
 	}
 	
 	@media #{$big-screen} {
-		border-top: $section-border-size double $me-background;
-		height: 45rem;
+		border-top: $section-border-size double $alt-background;
 	}
 	
 	.github-link {
 		width: 100%;
 		font-family: $normal-font;
 		text-align: center;
+		margin-bottom: 2em;
 
 		img {
 			width: 6vw;
@@ -85,7 +88,7 @@
 	}
 
 	h1 {
-		display: block;
+		display: inline-block;
 		margin-bottom: 2vw;
 		width: 100%;
 
@@ -94,25 +97,19 @@
 		}
 	}
 
-	.project {
+	.row {
 		display: flex;
-		justify-content: center;
+	}
 
+	.project {
 		a {
 			text-decoration: none !important;
 		}
 
 		img {
 			object-fit: cover;
-			width: 15vw;
-			height: 15vw;
-			border-radius: 0.2vw;
-
-			@media #{$big-screen} {
-				width: 15rem;
-				height: 15rem;
-				border-radius: 0.2rem;
-			}
+			width: $project-width;
+			height: $project-height;
 		}
 
 		.picture-missing {
@@ -122,16 +119,12 @@
 			background: $white;
 			font-size: 6vw;
 			color: $black;
-			width: 15vw;
-			height: 15vw;
-			border-radius: 0.2vw;
 			font-family: $code-font;
+			width: $project-width;
+			height: $project-height;
 
 			@media #{$big-screen} {
 				font-size: 6rem;
-				width: 15rem;
-				height: 15rem;
-				border-radius: 0.2rem;
 			}
 		}
 

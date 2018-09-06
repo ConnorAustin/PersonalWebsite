@@ -6,12 +6,12 @@
 	align-items: center;
 
 	color: $white;
-	background-color: $me-background;
-	border-top: 2vw double $alt-background;
+	background-color: $alt-background;
+	border-top: 2vw double $me-background;
 	padding-bottom: 2vw;
 
 	@media #{$big-screen} {
-		border-top: $section-border-size double $alt-background;
+		border-top: $section-border-size double $me-background;
 		padding-bottom: $section-border-size;
 	}
 

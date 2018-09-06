@@ -2,6 +2,8 @@ import React from 'react';
 import './Projects.css';
 import Slider from 'react-slick';
 
+const PROJECTS_PER_ROW = 3;
+
 const projects = [
 	{
 		name: 'MIPS Simulator',
@@ -110,40 +112,67 @@ const projects = [
 ];
 
 export default class Projects extends React.Component {
-	render() {
-		let project_elements = projects.map((p) => {
-			var picture;
-
-			if(p.image) {
-				picture = (
-					<span style={{width: '15vw', height: '15vw', borderRadius: '0.2vw', overflow: 'hidden'}}>
-						<img src={p.image} />
-					</span>
-				);
-			} else {
-				picture = (
-					<div className="picture-missing">{'</>'}</div>
-				);
+	getProjectRows() {
+		let rows = [];
+		let row = [];
+		for(let i = 0; i < projects.length; i+=1) 
+		{
+			if(i % PROJECTS_PER_ROW == 0) {
+				if(row.length != 0) {
+					rows.push(row);	
+					row = [];
+				}
 			}
+			row.push(projects[i]);
+		}
+		
+		if(row.length != 0) {
+			rows.push(row);	
+		}
+
+		return rows;
+	}
+
+	render() {
+		let rows = this.getProjectRows();
+		let row = [];
+		let rows_elements = rows.map(row => {
+			let row_elements = row.map(project => {
+				var picture;
+
+				if(project.image) {
+					picture = (
+						<div>
+							<img src={project.image} />
+						</div>
+					);
+				} else {
+					picture = (
+						<div className="picture-missing">{'</>'}</div>
+					);
+				}
+				
+				return (
+					<div key={project.name} className="project">
+						<a href={project.link}>
+							{/*<h1>{project.name}</h1>*/}
+							{picture}
+						</a>
+					</div>
+				);
+			});
 
 			return (
-				<span key={p.name} className="project">
-					<a href={p.link}>
-						<h1>{p.name}</h1>
-						{picture}
-					</a>
-				</span>
+				<div className="row">{row_elements}</div>
 			);
 		});
 
 		return (
-		<div id="projects-container">
-			<h1 class="header">Projects</h1>
-			<div class="github-link"><a href="https://github.com/ConnorAustin"><img src={require('../Images/GitHub.png')}></img></a></div>
-			<Slider lazyLoad={true} dots={true} infinite={true} speed={500} slidesToShow={4} slidesToScroll={4}>
-				{project_elements}
-			</Slider>
-		</div>
+			<div id="projects-container">
+				<h1 class="header">Projects</h1>
+				<div class="github-link"><a href="https://github.com/ConnorAustin"><img src={require('../Images/GitHub.png')}></img></a></div>
+				<div>{rows_elements}</div>
+			</div>
 		);
 	}
 }
