@@ -8,107 +8,52 @@ const projects = [
 	{
 		name: 'MIPS Simulator',
 		link: 'https://github.com/ConnorAustin/MipsSimulator',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/MipsSimulator/master/example.gif'
-	},
-	{
-		name: 'Physics Notes',
-		link: 'https://github.com/physicsnotes/physicsnotes.github.io',
-		image: 'https://github.com/physicsnotes/physicsnotes.github.io/raw/master/Examples/Website.png'
-	},
-	{
-		name: 'Rust Ray Tracer',
-		link: 'https://github.com/ConnorAustin/RustRaytracer',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/RustRaytracer/master/example.gif'
+		image: 'https://raw.githubusercontent.com/ConnorAustin/MipsSimulator/master/example.gif',
+		desc: 'A graphical visualization of the MIPS CPU pipeline being executed. It reads a MIPS asm file and executes it opcode by opcode. The speed of execution can be sped up or slowed down.',
+		uses: ['C++', 'SFML', 'MIPS']
 	},
 	{
 		name: 'SNES Controller',
 		link: 'https://github.com/ConnorAustin/SNESController',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/SNESController/master/SnesPic.jpg'
+		image: 'https://raw.githubusercontent.com/ConnorAustin/SNESController/master/SnesPic.jpg',
+		desc: 'A project to learn about the SNES controller protocol by soldering the ports to an Arduino that tricks the controller into thinking its the SNES. The Arduino then forwards the controller inputs as keyboard presses via a USB keyboard protocol to a rPI that is emulating SNES games.',
+		uses: ['Python', 'C']
 	},
 	{
-		name: 'Compiler',
-		link: 'https://github.com/ConnorAustin/Compiler'
+		name: 'Physics Notes',
+		link: 'https://github.com/physicsnotes/physicsnotes.github.io',
+		image: 'https://github.com/physicsnotes/physicsnotes.github.io/raw/master/Examples/Website.png',
+		desc: 'A website I made to keep notes for my physics class. It features LaTeX rendered equations with a built in editor and a quiz feature that turns your notes into flashcards.',
+		uses: ['JavaScript', 'jQuery', 'LaTeX']
 	},
 	{
-		name: 'Better Board',
-		link: 'https://github.com/ConnorAustin/BetterBoard',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/BetterBoard/master/Examples/kewl.png'
-	},
-	{
-		name: 'BST Visualization',
-		link: 'https://github.com/ConnorAustin/TreeVisual',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/TreeVisual/master/example.gif'
-	},
-	{
-		name: 'Booyer Moore',
-		link: 'https://github.com/ConnorAustin/BoyerMoore',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/BoyerMoore/master/example.gif'
+		name: 'Ray Tracer',
+		link: 'https://github.com/ConnorAustin/RustRaytracer',
+		image: 'https://raw.githubusercontent.com/ConnorAustin/RustRaytracer/master/example.gif',
+		desc: ['A ray tracer made in Rust, a safe systems programming language designed to be a more modern alternative to something like C. This was a small project to learn the language and see what its strengths and weaknesses are.'],
+		uses: ['Rust', 'SDL2']
 	},
 	{
 		name: 'Roll Me Up',
 		link: 'https://github.com/ConnorAustin/RollMeUp',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/RollMeUp/master/gameplay.gif'
-	},
-	{
-		name: 'Bartok',
-		link: 'https://github.com/ConnorAustin/Bartok',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/Bartok/master/gameplay.gif'
-	},
-	{
-		name: 'Space Shooter',
-		link: 'https://github.com/ConnorAustin/SpaceShooter',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/SpaceShooter/master/gameplay.gif'
-	},
-	{
-		name: 'Bob Toss',
-		link: 'https://github.com/ConnorAustin/BobToss',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/BobToss/master/bob.gif'
-	},
-	{
-		name: 'Apple Picker',
-		link: 'https://github.com/ConnorAustin/ApplePicker',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/ApplePicker/master/gameplay.gif'
-	},
-	{
-		name: 'Solar System',
-		link: 'https://github.com/ConnorAustin/SolarSystem',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/SolarSystem/master/gameplay.gif'
-	},
-	{
-		name: 'I See Dead Spikes',
-		link: 'https://github.com/ConnorAustin/ISeeDeadSpikes',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/ISeeDeadSpikes/master/Gameplay.png'
+		image: 'https://raw.githubusercontent.com/ConnorAustin/RollMeUp/master/gameplay.gif',
+		desc: 'A Katamari Damacy clone made in a week. This was a way for me to learn Blender, a 3D modeling tool, as Katamari games are make creative use of small simple 3D objects. It also has controller input which was something I have never written until this game.',
+		uses: ['C#', 'Unity']
 	},
 	{
 		name: 'Mountain Man',
 		link: 'https://github.com/ConnorAustin/MountainMan',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/MountainMan/master/gameplay_2.png'
-	},
-	{
-		name: 'Suitcase Hero',
-		link: 'https://github.com/ConnorAustin/SuitcaseHero',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/SuitcaseHero/master/gameplay.gif'
-	},
-	{
-		name: 'Web Dev 1',
-		link: 'https://github.com/ConnorAustin/WebDev1',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/WebDev1/master/Picture.png'
+		image: 'https://raw.githubusercontent.com/ConnorAustin/MountainMan/master/gameplay_2.png',
+		desc: 'The first mobile app I wrote. It is a simple game where the player has to make a quick-reaction choice between the two lower mountains, the goal being descending farther than your friends.',
+		uses: ['C#', 'Unity']
 	},
 	{
 		name: 'Jelly Blast!',
 		link: 'https://github.com/ConnorAustin/JellyBlast',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/JellyBlast/master/gameplay.gif'
-	},
-	{
-		name: 'Mario Hand',
-		link: 'https://github.com/ConnorAustin/MarioHand',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/MarioHand/master/example.gif'
-	},
-	{
-		name: 'TV Costume',
-		link: 'https://github.com/ConnorAustin/TV-Costume',
-		image: 'https://raw.githubusercontent.com/ConnorAustin/TV-Costume/master/example.gif'
-	},
+		image: 'https://raw.githubusercontent.com/ConnorAustin/JellyBlast/master/gameplay.gif',
+		desc: 'A fun physics game that went through many iterations. It uses a graphical library Processing which I found useful for making quick and dirty visuals for later Java projects.',
+		uses: ['Java', 'Processing', 'Box2D']
+	}
 ];
 
 export default class Projects extends React.Component {
@@ -134,44 +79,30 @@ export default class Projects extends React.Component {
 	}
 
 	render() {
-		let rows = this.getProjectRows();
-		let row = [];
-		let rows_elements = rows.map(row => {
-			let row_elements = row.map(project => {
-				var picture;
-
-				if(project.image) {
-					picture = (
-						<div>
-							<img src={project.image} />
-						</div>
-					);
-				} else {
-					picture = (
-						<div className="picture-missing">{'</>'}</div>
-					);
-				}
-				
-				return (
-					<div key={project.name} className="project">
-						<a href={project.link}>
-							{/*<h1>{project.name}</h1>*/}
-							{picture}
-						</a>
-					</div>
-				);
+		let elements = projects.map(project => {
+			let uses_elements = project.uses.map(use => {
+				return <span className="project-use">{use}</span>
 			});
 
 			return (
-				<div className="row">{row_elements}</div>
+				<div key={project.name} className="project">
+					<a href={project.link}>
+						<img src={project.image} />
+					</a>
+					<div className="project-desc">
+						<h1>{project.name}</h1>
+						<div>{uses_elements}</div>
+						<div className="project-desc-text">{project.desc}</div>
+					</div>
+				</div>
 			);
 		});
-
+		
 		return (
 			<div id="projects-container">
-				<h1 class="header">Projects</h1>
+				<h1 class="header">Favorite Personal Projects</h1>
 				<div class="github-link"><a href="https://github.com/ConnorAustin"><img src={require('../Images/GitHub.png')}></img></a></div>
-				<div>{rows_elements}</div>
+				<div>{elements}</div>
 			</div>
 		);
 	}

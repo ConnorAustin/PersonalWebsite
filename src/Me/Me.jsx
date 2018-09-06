@@ -32,7 +32,7 @@ export default class Me extends React.Component {
 		<div id="about-me-container">
 			<div className="center-container"><h1 class="header">About Me</h1></div>
 			<div className="center-container">
-				<h2>Hello! I am <b>Connor Austin</b>, a developer that loves building things <i class="fas fa-rocket"></i></h2>
+				<h2>Hello I am <b>Connor Austin</b>! I am a developer that builds things <i class="fas fa-rocket"></i></h2>
 			</div>
 			<br/>
 			<div className="center-container">

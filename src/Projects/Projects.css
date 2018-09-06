@@ -2,141 +2,105 @@
   border-top: 2vw double #242424;
   color: #e9e8e8;
   background-color: #4d936f;
-  padding-bottom: 1em;
-}
-@media screen and (max-width: 8in) {
-  #projects-container {
-    padding-bottom: 12rem;
-  }
-}
-@media screen and (min-width: 12in) {
-  #projects-container {
-    border-top: 1.7rem double #242424;
-  }
-}
-#projects-container .github-link {
-  width: 100%;
-  font-family: "Raleway", serif;
-  text-align: center;
-  margin-bottom: 2em;
-}
-#projects-container .github-link img {
-  width: 6vw;
-  height: 6vw;
-}
-@media screen and (min-width: 12in) {
-  #projects-container .github-link img {
-    width: 5rem;
-    height: 5rem;
-  }
-}
-#projects-container .slick-dots {
-  display: flex !important;
-  justify-content: center !important;
-  position: inherit;
-  margin-top: 2vw;
-}
-@media screen and (min-width: 12in) {
+  padding-bottom: 1em; }
+  @media screen and (max-width: 8in) {
+    #projects-container {
+      padding-bottom: 12rem; } }
+  @media screen and (min-width: 12in) {
+    #projects-container {
+      border-top: 1.7rem double #242424; } }
+  #projects-container .github-link {
+    width: 100%;
+    font-family: "Raleway", serif;
+    text-align: center;
+    margin-bottom: 3em; }
+    #projects-container .github-link img {
+      width: 6vw;
+      height: 6vw; }
+      @media screen and (min-width: 12in) {
+        #projects-container .github-link img {
+          width: 5rem;
+          height: 5rem; } }
   #projects-container .slick-dots {
-    margin-top: 2.2rem;
-  }
-}
-#projects-container .slick-dots li {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  margin-left: 2vw;
-  margin-right: 2vw;
-}
-@media screen and (min-width: 12in) {
-  #projects-container .slick-dots li {
-    margin-left: 2.2rem;
-    margin-right: 2.2rem;
-  }
-}
-#projects-container .slick-dots li.slick-active button:before {
-  color: #4d936f;
-}
-#projects-container .slick-dots button {
-  width: 1vw;
-  text-align: center;
-}
-@media screen and (min-width: 12in) {
-  #projects-container .slick-dots button {
-    width: 1rem;
-  }
-}
-#projects-container .slick-dots button:before {
-  opacity: 1;
-  font-size: 2vw;
-  color: #e9e8e8;
-  transition: color 0.5s;
-}
-@media screen and (min-width: 12in) {
-  #projects-container .slick-dots button:before {
-    font-size: 2.3rem;
-  }
-}
-#projects-container h1 {
-  display: inline-block;
-  margin-bottom: 2vw;
-  width: 100%;
-}
-@media screen and (min-width: 12in) {
+    display: flex !important;
+    justify-content: center !important;
+    position: inherit;
+    margin-top: 2vw; }
+    @media screen and (min-width: 12in) {
+      #projects-container .slick-dots {
+        margin-top: 2.2rem; } }
+    #projects-container .slick-dots li {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      margin-left: 2vw;
+      margin-right: 2vw; }
+      @media screen and (min-width: 12in) {
+        #projects-container .slick-dots li {
+          margin-left: 2.2rem;
+          margin-right: 2.2rem; } }
+    #projects-container .slick-dots li.slick-active button:before {
+      color: #4d936f; }
+    #projects-container .slick-dots button {
+      width: 1vw;
+      text-align: center; }
+      @media screen and (min-width: 12in) {
+        #projects-container .slick-dots button {
+          width: 1rem; } }
+      #projects-container .slick-dots button:before {
+        opacity: 1.0;
+        font-size: 2vw;
+        color: #e9e8e8;
+        transition: color 0.5s; }
+        @media screen and (min-width: 12in) {
+          #projects-container .slick-dots button:before {
+            font-size: 2.3rem; } }
   #projects-container h1 {
-    margin-bottom: 2rem;
-  }
-}
-#projects-container .row {
-  display: flex;
-}
-#projects-container .project a {
-  text-decoration: none !important;
-}
-#projects-container .project img {
-  object-fit: cover;
-  width: 33vw;
-  height: 22vw;
-}
-#projects-container .project .picture-missing {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #e9e8e8;
-  font-size: 6vw;
-  color: #111111;
-  font-family: "Source Code Pro", monospace;
-  width: 33vw;
-  height: 22vw;
-}
-@media screen and (min-width: 12in) {
-  #projects-container .project .picture-missing {
-    font-size: 6rem;
-  }
-}
-#projects-container .project br {
-  display: block;
-  margin-top: 1vw;
-}
-@media screen and (min-width: 12in) {
-  #projects-container .project br {
-    margin-top: 1rem;
-  }
-}
-#projects-container .project h1 {
-  color: #e9e8e8;
-  width: 100%;
-  font-family: "Asap", sans-serif;
-  font-size: 1.9vw;
-  margin-top: 0;
-  margin-bottom: 0.3vw;
-  text-align: center;
-}
-@media screen and (min-width: 12in) {
-  #projects-container .project h1 {
-    font-size: 1.9rem;
-    margin-bottom: 0.3rem;
-  }
-}
+    display: inline-block;
+    margin-bottom: 2vw;
+    width: 100%; }
+    @media screen and (min-width: 12in) {
+      #projects-container h1 {
+        margin-bottom: 2rem; } }
+  #projects-container .row {
+    display: flex; }
+  #projects-container .project {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center; }
+    #projects-container .project a {
+      width: 20rem;
+      text-decoration: none !important; }
+    #projects-container .project img {
+      object-fit: cover;
+      width: 20rem;
+      height: 20rem;
+      box-shadow: 0px 0.2rem 0.1rem 1px rgba(0, 0, 0, 0.25); }
+    #projects-container .project br {
+      display: block;
+      margin-top: 1vw; }
+      @media screen and (min-width: 12in) {
+        #projects-container .project br {
+          margin-top: 1rem; } }
+    #projects-container .project .project-desc {
+      font-family: "Raleway", serif;
+      margin-left: 3rem;
+      width: 20rem;
+      font-size: 1.2rem; }
+      #projects-container .project .project-desc h1 {
+        color: #e9e8e8;
+        font-family: "Asap", sans-serif;
+        font-size: 1.9rem;
+        margin-bottom: 0.5rem; }
+    #projects-container .project .project-desc-text {
+      margin-top: 0.4rem; }
+    #projects-container .project .project-use {
+      background-color: #3b7256;
+      color: #e9e8e8;
+      border-radius: 0.4rem;
+      padding: 0.3rem;
+      font-size: 0.9rem;
+      margin: 0.2rem;
+      font-family: "Source Code Pro", monospace; }
 
 /*# sourceMappingURL=Projects.css.map */

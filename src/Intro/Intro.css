@@ -2,8 +2,7 @@
 #intro-container {
   position: relative;
   height: 100vh;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 #intro {
   position: relative;
@@ -13,96 +12,74 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #111111;
-}
-#intro #name-container {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  overflow: hidden;
-}
-#intro #name-container .underline {
-  border-top: 0.5vw solid #111111;
-  width: 100%;
-  animation: underline-expand 0.4s ease;
-}
-#intro #name {
-  font-size: 13vw;
-  position: relative;
-  opacity: 0;
-  top: 20vw;
-  animation: name–reveal 0.6s ease-out 0.2s;
-  animation-fill-mode: forwards;
-  font-family: "Mukta Mahee", serif;
-}
-@media screen and (min-width: 12in) {
+  color: #111111; }
+  #intro #name-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    overflow: hidden; }
+    #intro #name-container .underline {
+      border-top: 0.5vw solid #111111;
+      width: 100%;
+      animation: underline-expand 0.4s ease; }
   #intro #name {
-    font-size: 10rem;
-  }
-}
-#intro #identity-container {
-  display: flex;
-  margin-right: 20px;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-  width: 30vw;
-  height: 5vw;
-  bottom: 1px;
-}
-#intro #identity-container .identity {
-  position: absolute;
-  bottom: 10vw;
-  left: 0;
-  color: #e9e8e8;
-  width: 100%;
-  height: 100%;
-  font-size: 3vw;
-  font-family: "Asap", sans-serif;
-  align-items: flex-end;
-  background-color: #111111 !important;
-}
-@media screen and (min-width: 12in) {
-  #intro #identity-container .identity {
-    font-size: 2rem;
-  }
-}
-#intro #identity-container .identity-reveal-anim {
-  animation: 0.6s identity–reveal forwards;
-}
-#intro #identity-container .identity-visible {
-  opacity: 1;
-  bottom: 0vw;
-}
-@media screen and (min-width: 12in) {
+    font-size: 13vw;
+    position: relative;
+    opacity: 0;
+    top: 20vw;
+    animation: name–reveal 0.6s ease-out 0.2s;
+    animation-fill-mode: forwards;
+    font-family: "Mukta Mahee", serif; }
+    @media screen and (min-width: 12in) {
+      #intro #name {
+        font-size: 10rem; } }
   #intro #identity-container {
-    width: 20rem;
-    height: 3rem;
-  }
-}
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    width: 30vw;
+    height: 5vw;
+    bottom: 1px; }
+    #intro #identity-container .identity {
+      position: absolute;
+      bottom: 10vw;
+      left: 0;
+      color: #e9e8e8;
+      width: 100%;
+      height: 100%;
+      font-size: 3vw;
+      font-family: "Asap", sans-serif;
+      align-items: flex-end;
+      background-color: #111111 !important; }
+      @media screen and (min-width: 12in) {
+        #intro #identity-container .identity {
+          font-size: 2rem; } }
+    #intro #identity-container .identity-reveal-anim {
+      animation: 0.6s identity–reveal forwards; }
+    #intro #identity-container .identity-visible {
+      opacity: 1;
+      bottom: 0vw; }
+    @media screen and (min-width: 12in) {
+      #intro #identity-container {
+        width: 20rem;
+        height: 3rem; } }
 @keyframes identity–reveal {
   to {
     opacity: 1;
-    bottom: 0vw;
-  }
-}
+    bottom: 0vw; } }
 @keyframes name–reveal {
   to {
     opacity: 1;
-    top: 0vh;
-  }
-}
+    top: 0vh; } }
 @keyframes underline-expand {
   from {
-    width: 0%;
-  }
+    width: 0%; }
   to {
-    width: 100%;
-  }
-}
-
+    width: 100%; } }
 #more-info {
   position: absolute;
   top: 100vh;
@@ -112,28 +89,23 @@
   font-family: "Asap", sans-serif;
   animation: more-info-reveal 0.8s ease-out 0.9s forwards;
   border-bottom: 5rem solid #4d936f;
-  color: #111111;
-}
-#more-info .more-info-icon {
-  position: relative;
-  top: 1.6rem;
-  font-size: 4rem;
-  color: #e9e8e8;
-  text-align: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1000px;
-  background-color: #4d936f;
-}
-#more-info .more-info-text {
-  position: relative;
-  top: 2.2rem;
-}
+  color: #111111; }
+  #more-info .more-info-icon {
+    position: relative;
+    top: 1.6rem;
+    font-size: 4rem;
+    color: #e9e8e8;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1000px;
+    background-color: #4d936f; }
+  #more-info .more-info-text {
+    position: relative;
+    top: 2.2rem; }
 
 @keyframes more-info-reveal {
   to {
-    top: calc(100vh - 13rem);
-  }
-}
+    top: calc(100vh - 13rem); } }
 
 /*# sourceMappingURL=Intro.css.map */
